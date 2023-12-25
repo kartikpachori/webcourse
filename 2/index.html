@@ -28,7 +28,8 @@
            background-color: pink;
         }
 
-        /*DESCENDANT SELECTOR*/
+        /* DESCENDANT SELECTOR */
+
         div p{
             color:blue;
             background-color:yellowgreen ;
@@ -39,10 +40,30 @@
             margin:30;
             padding:50;
         }
+
+        /* pseudo selector */
+        
+        a:visited{
+            color:yellow;
+        }
+        a:active{
+            background-color:red;
+        }
+        a:hover{
+            background-color: purple;;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
     </style>
 </head>
 <body>
+    <main class="one">
+        <p>i am one</p>
+        <p>i am second</p>
+    </main>
     <div class="red">I am a div <p>I am a div paragraph</p></div>
     <div id="green">hello</div>
+    <div><a href="https://www.google.com">Go to google</a></div>
 </body>
 </html>
