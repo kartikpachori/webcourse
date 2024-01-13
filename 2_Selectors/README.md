@@ -1,92 +1,121 @@
 ## Introduction
-The document discusses three methods to add CSS to an HTML page: Inline CSS, Internal CSS, and External CSS. Each method has its use cases and best practices.
 
-## Three Ways to Add CSS to HTML
+Selectors in CSS are essential for styling elements on a webpage. They can target elements based on various attributes such as id, class, and name.
 
-### Inline CSS
-Inline CSS involves adding style attributes directly to HTML elements. It is the simplest but less recommended method.
+### Selectors Basics
 
-Example:
-```html
-<p style="color: red;">This is a red paragraph.</p>
-```
+- **Element Selector:** Styles applied to all elements of a specific type.
+- **Class Selector:** Styles applied to elements with a specific class.
 
-##  Internal CSS
+## Specific Selectors
 
-
-## Example:
-
-```html
-Copy code
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        p {
-            color: blue;
-        }
-    </style>
-</head>
-<body>
-    <p>This is a blue paragraph.</p>
-</body>
-</html>
-```
-
-## External CSS
-External CSS involves creating a separate .css file to store styles, which is linked to the HTML file.
-
-## Example (styles.css):
+### Element Selector
 
 ```css
-Copy code
-/* styles.css */
+/* Apply styles to all paragraphs */
 p {
-    font-size: 16px;
-    color: green;
+  /* Styles here */
 }
 ```
 
-```html
-Copy code
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <p>This is a green paragraph with styles from an external CSS file.</p>
-</body>
-</html>
-```
-Applying CSS Methods
-Inline CSS vs Internal CSS
-Inline CSS is applied using style attributes on individual elements.
-Internal CSS is applied using style tags in the head section of the HTML document.
-Bulk Editing CSS
-To efficiently update multiple elements:
+### Class Selector
 
-Avoid repeating 'style' attributes for each element.
-Use internal or external CSS for bulk editing.
-External CSS Best Practices
-Introduction to External CSS
-External CSS involves writing CSS in a separate file, enhancing code organization.
-
-## Benefits of External CSS
-- Prevents HTML file and style tag growth.
-- Facilitates bulk editing and maintenance.
-- Enables collaboration by separating HTML and CSS responsibilities.
-Linking External CSS
-Use the <link> tag to connect the external CSS file to HTML.
-
-Example:
-
-```html
-<head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+```css
+/* Apply styles to elements with class 'example' */
+.example {
+  /* Styles here */
+}
 ```
 
-## Inline CSS vs External CSS
-- `Inline CSS` is recommended for specific cases only.
-- `External CSS` is preferred for production-grade websites and follows best practices.
+### Different CSS Selectors
+* Class Selector: Select elements with a specific class.
+* ID Selector: Select elements with a specific ID.
+* Child Selector: Select direct children of a specific parent.
+
+```css
+/* Apply styles to all paragraphs */
+p {
+  /* Styles here */
+}
+```
+
+### ID Selector
+
+```css
+/* Select the element with ID 'uniqueElement' */
+#uniqueElement {
+  /* Styles here */
+}
+```
+
+## Group Selector
+The group selector is used to minimise the code. Commas "," are used to separate each selector in a grouping. This reduces the number of lines of code. The code also looks clean.
+
+The syntax of Group Selector is as follows:
+
+```css
+  div, p, a {
+      property : value;
+  }
+```
+### Child Selector
+```css
+/* Select direct children paragraphs of a div */
+div > p {
+  /* Styles here */
+}
+```
+
+### Descendant Selector
+```css
+/* Apply styles to paragraphs that are descendants of a div */
+div p {
+  /* Styles here */
+}
+
+```
+
+### Universal Selector
+```css
+/* Apply margin and padding to all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+```
+
+### Active, Hover, and First Child
+
+```css
+/* Styles for active links */
+a:active {
+  /* Styles here */
+}
+
+/* Styles for hover effect on links */
+a:hover {
+  /* Styles here */
+}
+
+/* Styles for the first child of a parent element */
+parentElement :first-child {
+  /* Styles here */
+}
+
+```
+### Pseudo Classes in Web Development
+
+Pseudo classes like `:first-child` and `:nth-child` can be used to apply styling to specific elements. They are rarely used and may require additional research to fully understand their functionality.
+
+```css
+/* Apply styles to the first child of a parent element */
+parentElement :first-child {
+  /* Styles here */
+}
+
+parentElement :nth-child(2) {
+  /* Styles here */
+}
+
+```
