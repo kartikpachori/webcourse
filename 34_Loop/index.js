@@ -34,7 +34,7 @@ let a = 1;
 //     i++;
 // }
 
-let i = 10;
+let i = 8;
 do {
     console.log(i)
     i++;
