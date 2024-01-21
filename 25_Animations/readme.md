@@ -6,7 +6,7 @@ Welcome to the CSS Animations tutorial! In this tutorial, we'll explore the basi
 
 Transitions in CSS allow you to smoothly animate changes in property values. They are great for simple animations and can make your website look more dynamic.
 
-### Example Usage:
+### Example Usage:z 
 
 ```html
 <!DOCTYPE html>
