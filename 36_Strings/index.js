@@ -21,7 +21,7 @@ console.log(b.length)
 console.log(b.slice(1, 5))
 console.log(b.slice(1))
 
-console.log(b.replace("Sh", "77"))
+console.log(b.replace("Sh", "18"))
 console.log(b.concat(a, "Aishwariya", "Rahul", "Priya"))
 
 console.log(b)
