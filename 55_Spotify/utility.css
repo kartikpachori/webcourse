@@ -14,3 +14,29 @@
 .items-center {
     align-items: center;
 }
+
+.invert {
+    filter: invert(1);
+}
+
+.bg-grey {
+    background-color: hsl(0deg 0% 7.06%);
+}
+
+.rounded {
+    border-radius: 7px;
+}
+
+.m-1 {
+    margin: 5px;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+
+}
+
+.p-1 {
+    padding: 15px;
+}

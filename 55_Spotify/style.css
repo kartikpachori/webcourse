@@ -9,6 +9,7 @@ body {
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto';
 }
 
 .left {
@@ -26,7 +27,7 @@ body {
 }
 
 .home ul li {
-    font-family: 'Roboto';
+
     display: flex;
     gap: 15px;
     list-style: none;
@@ -34,24 +35,42 @@ body {
     padding-top: 18px;
 }
 
-.bg-black {
-    background-color: black;
-    color: white;
+.heading {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+
+    padding: 20px 10px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
 
 }
 
-.invert {
-    filter: invert(1);
+.heading img {
+    width: 30px;
 }
 
-.bg-grey {
-    background-color: hsl(0deg 0% 7.06%);
+.library {
+    min-height: 68vh;
+    position: relative;
 }
 
-.rounded {
-    border-radius: 7px;
+.footer {
+    display: flex;
+    font-size: 10px;
+    color: grey;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+
 }
 
-.m-1 {
-    margin: 5px;
+.footer a {
+    color: grey;
+}
+
+.heading h2 {
+    font-weight: 200;
 }
