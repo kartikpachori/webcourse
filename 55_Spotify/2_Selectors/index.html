@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+        div {
+            background-color: red;
+        }
+
+        /*CLASS*/
+
+        .red {
+            background-color: red;
+        }
+
+        /*ID SLECTOR*/
+
+        #green {
+            background-color: green;
+        }
+
+        /*CHILD SELECTOR*/
+
+        div>p {
+            color: blue;
+            background-color: pink;
+        }
+
+        /* 1st child selector */
+
+        div p:first-child {
+            color: pink;
+            background-color: orange;
+        }
+
+        /* Nth child slector , here n=2*/
+
+        div p:nth-child(2) {
+            color: pink;
+            background-color: orange;/
+        }
+
+        /* DESCENDANT SELECTOR */
+
+        div p {
+            color: blue;
+            background-color: yellowgreen;
+        }
+
+        /*universal selector*/
+        * {
+            margin: 30;
+            padding: 50;
+        }
+
+        /* pseudo selector */
+
+        a:visited {
+            color: yellow;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        a:hover {
+            background-color: purple;
+            ;
+        }
+
+        p:first-child {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>i am one</p>
+        <p>i am second</p>
+    </main>
+    <div class="red">I am a div <p>I am a div paragraph</p>
+    </div>
+    <div id="green">hello</div>
+    <div><a href="https://www.google.com">Go to google</a></div>
+</body>
+
+</html>
