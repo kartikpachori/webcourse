@@ -1,0 +1,19 @@
+{
+  "name": "netflix",
+  "version": "1.0.0",
+  "description": "This is my personal project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "netflix",
+    "clone"
+  ],
+  "author": "kartikey",
+  "license": "ISC",
+  "dependencies": {
+    "slugify": "^1.6.6"
+  }
+}
