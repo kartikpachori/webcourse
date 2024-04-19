@@ -4,4 +4,4 @@
 // import harry from "./mymodule.js";
 // console.log(harry);
 const a = require("./mymodule2.js");
-console.log(b);
+console.log(a, __dirname, __filename);
