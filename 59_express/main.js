@@ -23,7 +23,7 @@ const port = 3000
 
 app.get('/blog/:slug', (req, res) => {
     // console.log(req)
-    console.log(req)
+
     console.log(req.params)
     console.log(req.query)
     res.send(`hello ${req.params.slug}`)
